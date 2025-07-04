@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*CONFIG BODY*/
+
+body{
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to bottom,#111111, #00002c, #110955, #23137e, #341ca7);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/*ESTILIZAÇÃO DO HEADER*/
+
+.box-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 18vh;
+}
+
+.box-menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.box-menu li{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 1000px;
+    font-size: 25px;
+}
+
+.box-menu li:hover{
+    transition: 0.7s;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 650px){
+    header{
+        display: none;
+    }
+}
+
+/*ESTILIZAÇÃO DA MAIN*/
+
+.container{
+    margin-top: 50px;
+}
+
+.box-text-init{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 35px;
+}
+
+.text01{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    padding: 50px;
+}
+
+.text01 p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+
+.text01 h1{
+    font-family: "Montserrat";
+}
+
+.img01{
+    display: flex;
+    align-items: center;
+}
+
+.img01 img{
+    width: 350px;
+    border-radius: 100%;
+    border: white solid;
+    box-shadow: 0px 0px 25px white;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.icons a img{
+    width: 70px;
+    filter: drop-shadow(0px 0px 7px white);
+}
+
+@media (max-width: 1100px){
+    .box-text-init{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .text01 h1{
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img01{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img01 img{
+        width: 280px;
+    }
+
+    .icons a img{
+        width: 50px;
+        filter: drop-shadow(0px 0px 7px white);
+    }
+
+}
+
+/*CARDS*/
+
+.box-cards{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.title01{
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    font-family: "Montserrat";
+}
+
+.title01 h1{
+    font-weight: 500;
+    font-size: 45px;
+    font-family: 'Montserrat';
+}
+
+.title{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat";
+}
+
+.info{
+    text-align: justify;
+    padding: 15px;
+    font-family: "Montserrat";
+}
+
+.cards{
+    width: 280px;
+    height: 340px;
+    color: white;
+    border: white solid;
+    border-radius: 20px;
+    background-color: #575757;
+    box-shadow: 0px 0px 12px #1d1d1d;
+}
+
+.img img{
+    width: 100%;
+    height: 181.86px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*CARDS PROFISSIONAL*/
+
+.box-cards02{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.cards02{
+    width: 280px;
+    height: 340px;
+    color: white;
+    border: white solid;
+    border-radius: 20px;
+    background-color: #575757;
+    box-shadow: 0px 0px 12px #1d1d1d;
+}
+
+.img02 img{
+    width: 100%;
+    height: 181.86px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    -webkit-mask-image: linear-gradient(to bottom, black 88%, transparent 100%);
+}
+
+.title02{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Montserrat";
+}
+
+.info02{
+    text-align: justify;
+    padding: 15px;
+    font-family: "Montserrat";
+}
